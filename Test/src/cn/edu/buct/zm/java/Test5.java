@@ -37,6 +37,5 @@ import java.util.Scanner;
         else {String s= (n>=90)?"属于A等":((n>=60)?"属于B等":"属于C等");
             System.out.println(n+"分，"+s);
         }
-
     }
     }
