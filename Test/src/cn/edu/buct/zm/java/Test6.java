@@ -15,7 +15,7 @@ public class Test6 {
         System.out.println("请再键入一个整数");
         n = scanner.nextInt();
         int temp, gongyue, gongbei;
-        if (m >= n) {
+        if (m <= n) {
             temp = m;
             m = n;
             n = temp;
@@ -28,7 +28,8 @@ public class Test6 {
         }
         System.out.println("最大公约数为：" + m);
         System.out.println("最小公倍数为：" + product / m);
+
     }
 
-//
+
 }
