@@ -16,14 +16,19 @@ public class Test7 {
         int nNumber = 0;
         int cNumber = 0;
         int kNumber = 0;
+        int chineseNumber=0;
         for (int i = 0; i < p.length(); i++) {
             if (c[i] == 32) {
                 kNumber++;
+            }  else if ((c[i]>=48&&c[i]<=57)){
+                nNumber++;
             } else if ((c[i]>=65&&c[i]<=90)|(c[i]>=97&&c[i]<=122)){
                 sNumber++;
-            } else if ((c[i]>=48&&c[i]<=57)){
-                nNumber++;
-            } else {
+            }
+//            else if(c[i]>=4e00&c[i]<=9fA5){
+//                chineseNumber++;
+//            }
+            else {
                 cNumber++;
             }
         }
@@ -31,5 +36,6 @@ public class Test7 {
         System.out.println("输入字符中字母个数为:"+sNumber);
         System.out.println("输入字符中数字个数为:"+nNumber);
         System.out.println("输入字符中字符个数为:"+cNumber);
+//        System.out.println("输入字符中汉字个数为:"+chineseNumber);
     }
 }
