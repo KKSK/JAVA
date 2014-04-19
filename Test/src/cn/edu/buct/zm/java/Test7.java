@@ -5,6 +5,12 @@ import java.util.Scanner;
 /**
  * Created by Administrator on 14-4-12.
  */
+
+//【程序7】
+//        题目：输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数。
+//        1.程序分析：利用while语句,条件为输入的字符不为'\n'.
+
+
 public class Test7 {
     public static void main(String[] args) {
         System.out.println("请输入一段字符:");
