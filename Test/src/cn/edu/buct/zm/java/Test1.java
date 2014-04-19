@@ -54,3 +54,24 @@ public class Test1 {
 //        System.out.println("第" + month + "个月的兔子总量为:" + number2);
 //    }
 //}
+
+
+    //使用递归
+//    public static void main(String[] args) {
+//        System.out.println("请输入一个数字");
+//        Scanner scanner = new Scanner(System.in);
+//        int s = scanner.nextInt();
+//        System.out.println(recursive(s));
+//    }
+//
+//    public static int recursive(int s) {
+//        for (int i = 0; i < s; i++) {
+//            if (s == 1 || s == 2) {
+//                return 1;
+//            } else {
+//                return recursive(s - 1) + recursive(s - 2);
+//            }
+//        }
+//        return recursive(s);
+//    }
+//}
