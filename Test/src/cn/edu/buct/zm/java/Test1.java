@@ -5,22 +5,26 @@ import java.util.Scanner;
 /**
  * Created by Administrator on 14-3-30.
  */
+//题目：古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，
+// 问每个月的兔子总数为多少？
+// 1.程序分析： 兔子的规律为数列1,1,2,3,5,8,13,21....
+
+
 public class Test1 {
     public static void main(String[] args) {
-        int number1=1;
-        int number2=1;
-        int month=1;
-        int s=0;
-        for(month=1;month<=40;month++){
-            if (month<3){
-                s=1;
+        int number1 = 1;
+        int number2 = 1;
+        int month = 1;
+        int s = 0;
+        for (month = 1; month <= 40; month++) {
+            if (month < 3) {
+                s = 1;
+            } else {
+                s = number2;
+                number2 += number1;
+                number1 = s;
             }
-            else {
-                s=number2;
-                number2+=number1;
-                number1=s;
-            }
-            System.out.println("第"+month+"月:"+number2);
+            System.out.println("第" + month + "月:" + number2);
         }
     }
 }
